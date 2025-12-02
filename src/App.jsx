@@ -6,6 +6,12 @@ import ChatInput from "./components/ChatInput";
 import Toast from "./components/Toast";
 import Modal from "./components/Modal";
 import LoginForm from "./components/LoginForm";
+import AutoFocusInput from "./components/AutoFocusInput";
+import MeasureBox from "./components/MeasureBox";
+import PrevValue from "./components/PrevValue";
+import Stopwatch from "./components/Stopwatch";
+import AutoScrollChat from "./components/AutoScrollChat";
+
 function App() {
   const [success, setSuccess] = useState(false);
   return (
@@ -108,6 +114,11 @@ function App() {
       </div>
       <Modal onClose={()=>console.log('Modal closed')}/>
         <LoginForm/>
+        <AutoFocusInput/>
+        <MeasureBox/>
+        <PrevValue/>
+        <Stopwatch/>
+        <AutoScrollChat/>
     </>
   );
 }
